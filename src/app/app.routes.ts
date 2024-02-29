@@ -24,10 +24,10 @@ export const routes: Routes = [
         component: TercerDiaComponent
     },
     {
-        path:'**',
+        path: '**',
         component: PrimerDiaComponent
 
     }
-    
+
 
 ];

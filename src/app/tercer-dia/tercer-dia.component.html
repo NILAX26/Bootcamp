@@ -1,1 +1,33 @@
 <p>tercer-dia works!</p>
+<!-- <h1>{{service.var_service}}</h1> -->
+
+
+<input
+    type="text"
+    [(ngModel)]="name"
+    class="form-control"
+>
+
+<button
+    class="btn btn-primary"
+    (click)="service.onclickbutton(name)"
+>Agregar</button>
+
+<table class="table">
+    <thead>
+        <tr>
+
+            
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">descrption</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let itemuser of users;let i=index">
+            <th>{{i+1}}</th>
+            <th>{{itemuser.title}}</th>
+            <td>{{itemuser.body}}</td>
+        </tr>
+    </tbody>
+</table>
