@@ -1,15 +1,27 @@
-
-<h3>hola mundo</h3>
-<h1>El antonio se la come</h1>
-
-
-  
-
-  <!-- Button trigger modal -->
-  
-  <!-- <app-primer-dia [ejemplo]="dinamico" [ejemplo2]="cr7"></app-primer-dia> -->
-  
-  <app-segundo-dia></app-segundo-dia>
-  
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/primer-dia">bootcamp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/primer-dia">primer-dia </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/segundo-dia">segundo-dia </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tercer-dia">tercer dia</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 <router-outlet />
 
