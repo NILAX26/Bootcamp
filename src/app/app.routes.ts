@@ -3,6 +3,7 @@ import { PrimerDiaComponent } from './primer-dia/primer-dia.component';
 import path from 'path';
 import { SegundoDiaComponent } from './segundo-dia/segundo-dia.component';
 import { TercerDiaComponent } from './tercer-dia/tercer-dia.component';
+import { ProyectoFinalComponent } from './proyecto-final/proyecto-final.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +23,10 @@ export const routes: Routes = [
     {
         path: 'tercer-dia',
         component: TercerDiaComponent
+    },
+    {
+        path: 'proyecto-final',
+        component: ProyectoFinalComponent
     },
     {
         path: '**',
